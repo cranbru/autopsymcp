@@ -1,10 +1,15 @@
+
 # Autopsy MCP
 
-Connects Claude Desktop directly to your Autopsy forensics cases.
-**No API key. No second AI service. No Autopsy plugins.**
+autopsyMCP is a Model Context Protocol (MCP) server that enables LLMs to autonomously perform digital forensics and analysis using Autopsy. It exposes a wide range of Autopsy’s core forensic tools and features to any MCP client, allowing automated investigation and evidence extraction workflows.
 
-Claude Desktop calls the tools, gets the forensic data back, and reasons
-over it — Claude *is* the analysis layer.
+**Works with any MCP client.**
+
+The instructions below use Claude Desktop as an example, but you can connect autopsyMCP to any compatible MCP client.
+
+No API key. No second AI service. No Autopsy plugins.
+
+Claude Desktop calls the tools, gets the forensic data back, and reasons over it — Claude *is* the analysis layer.
 
 ---
 
@@ -31,9 +36,10 @@ case. Find its path in Autopsy -> Case -> Case Properties.
 
 ---
 
+
 ## Installation (one-time)
 
-Requires: Python 3.10+, Claude Desktop
+Requires: Python 3.10+, and an MCP client (e.g., Claude Desktop)
 
 ```bash
 pip install fastmcp pydantic
@@ -41,7 +47,8 @@ pip install fastmcp pydantic
 
 ---
 
-## Add to Claude Desktop
+
+## Setup with Claude Desktop (example)
 
 Open your Claude Desktop config file:
 
@@ -64,6 +71,12 @@ Add the `autopsy` entry (replace the path with your actual path):
 ```
 
 **Restart Claude Desktop.** The tools will appear in the tools panel.
+
+---
+
+## Setup with Other MCP Clients
+
+autopsyMCP can be used with any MCP-compatible client. Refer to your client’s documentation for how to add or configure a custom MCP server, using the path to `autopsy_mcp.py` as the server entry point.
 
 ---
 
