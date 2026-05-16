@@ -1,4 +1,4 @@
-# Autopsy MCP for Claude Desktop
+# Autopsy MCP
 
 Connects Claude Desktop directly to your Autopsy forensics cases.
 **No API key. No second AI service. No Autopsy plugins.**
@@ -37,14 +37,6 @@ Requires: Python 3.10+, Claude Desktop
 
 ```bash
 pip install fastmcp pydantic
-```
-
-Test it runs:
-
-```bash
-python /path/to/autopsy_mcp/autopsy_mcp.py
-# Expected: Running MCP server "autopsy_mcp" with transport "stdio"
-# Ctrl+C to stop
 ```
 
 ---
