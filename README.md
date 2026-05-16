@@ -3,7 +3,7 @@
 # Autopsy MCP
 
 <p align="center">
-  <img src="logo.png" alt="Autopsy MCP Logo" width="180" />
+  <img src="logo.png" alt="Autopsy MCP Logo" />
 </p>
 
 autopsyMCP is a Model Context Protocol (MCP) server that enables LLMs to autonomously perform digital forensics and analysis using Autopsy. It exposes a wide range of Autopsy’s core forensic tools and features to any MCP client, allowing automated investigation and evidence extraction workflows.
